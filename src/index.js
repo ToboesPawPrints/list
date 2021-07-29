@@ -10,9 +10,11 @@ const DATA = [
   { id: "todo-2", name: "Repeat", completed: true }
 ];
 
+
+
 ReactDOM.render(
   <React.StrictMode>
-    <App subject = "Meow" tasks={ DATA } />
+    <App tasks={DATA} />
   </React.StrictMode>,
   document.getElementById('root')
 );
