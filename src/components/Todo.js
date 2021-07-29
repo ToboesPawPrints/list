@@ -5,7 +5,7 @@ export default function Todo (props) {
 
         <li className="todo stack-small">
           <div className="c-cb">
-            <input id="todo-0" type="checkbox" completed="props.completed" />
+            <input id="todo-0" type="checkbox" completed={props.completed} />
             <label className="todo-label" htmlFor="todo-0">
               {props.name}
             </label>
