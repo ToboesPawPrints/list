@@ -6,8 +6,8 @@ import reportWebVitals from './reportWebVitals';
 
 const DATA = [
   { id: "todo-0", name: "Eat", completed: true },
-  { id: "todo-1", name: "Sleep", completed: true },
-  { id: "todo-2", name: "Repeat", completed: true }
+  { id: "todo-1", name: "Sleep", completed: false },
+  { id: "todo-2", name: "Repeat", completed: false }
 ];
 
 
