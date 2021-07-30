@@ -1,12 +1,10 @@
-import React from 'react';
+import React from "react";
 import Todo from "./components/Todo.js";
 
-
-
-
 function App(props) {
-
-  const taskList = props.tasks.map(task => <Todo />);
+  const taskList = props.tasks.map((task) => (
+    <Todo id={task.id} name={task.name} completed={task.completed} />
+  ));
 
   return (
     <div className="todoapp stack-large">
@@ -45,18 +43,13 @@ function App(props) {
           <span className="visually-hidden"> tasks</span>
         </button>
       </div>
-      <h2 id="list-heading">
-        3 tasks remaining
-      </h2>
+      <h2 id="list-heading">3 tasks remaining</h2>
       <ul
         role="list"
         className="todo-list stack-large stack-exception"
         aria-labelledby="list-heading"
       >
-
-
         {taskList}
-       
       </ul>
     </div>
   );
