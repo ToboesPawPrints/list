@@ -10,4 +10,3 @@ export default function (props) {
     );
 }
 
-export default FilterButton;

@@ -21,5 +21,3 @@ export default function Form(props) {
       </form>
     );
 }
-
-export default Form;

@@ -1,7 +1,7 @@
 import React from "react";
 import Todo from "./components/Todo.js";
-import Form from "/.components/Form";
-import FilterButton from "/.components/FilterButton";
+import Form from "./components/Form.js";
+import FilterButton from "./components/FilterButton.js";
 
 function App(props) {
   const taskList = props.tasks.map((task) => (
