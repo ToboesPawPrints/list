@@ -2,7 +2,7 @@ import React from "react";
 
 function handleSubmit(x) {
     x.preventDefault();
-    alert('Hi there!');
+    alert("Hi there!");
 }
 
 function Form(props) {
@@ -26,5 +26,6 @@ function Form(props) {
       </form>
     );
 }
+
 
 export default Form;
