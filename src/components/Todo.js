@@ -23,5 +23,3 @@ export default function Todo (props) {
 
     );
 }
-
-export default Todo;
