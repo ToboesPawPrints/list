@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 
 
-const [name, setName] = useState('Using Books!');
-
-function handleSubmit(x) {
-    x.preventDefault();
-    alert("Hi there!");
-}
 
 function Form(props) {
+  
+  const [name, setName] = useState('');
+
+  function handleSubmit(x) {
+      x.preventDefault();
+      alert("Hi there!");
+  }
+  
     return (
         <form onSubmit={handleSubmit}>
         <h2 className="label-wrapper">
@@ -20,7 +22,7 @@ function Form(props) {
           type="text"
           id="new-todo-input"
           className="input input__lg"
-          name="text"
+          name={name}
           autoComplete="off"
         />
         <button type="submit" className="btn btn__primary btn__lg">
