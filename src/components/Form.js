@@ -8,7 +8,11 @@ function Form(props) {
       x.preventDefault();
       alert("Hi there!");
   }
-  
+
+  function handleChange(e) {
+    setName(e.target.value);
+  }
+
     return (
         <form onSubmit={handleSubmit}>
         <h2 className="label-wrapper">
