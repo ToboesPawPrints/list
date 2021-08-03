@@ -10,7 +10,9 @@ function Form(props) {
   }
 
   function handleChange(e) {
-    setName(e.target.value);
+    e.preventDefault();
+    props.addTask(name);
+    setName("");
   }
 
     return (
