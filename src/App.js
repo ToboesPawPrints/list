@@ -6,7 +6,8 @@ import FilterButton from "./components/FilterButton.js";
 function App(props) {
 
   function addTask(name) {
-    alert(name);
+    const newTask = { id: "id", name: name, completed: false };
+    setTasks([...tasks, newTask]);
   }
 
   const [tasks, setTasks] = useState(props.tasks);
@@ -21,6 +22,7 @@ function App(props) {
   );
 
   return (
+    
     <div className="todoapp stack-large">
       <h1>TodoMatic</h1>
      <Form addTask={addTask} />
