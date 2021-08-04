@@ -5,11 +5,6 @@ import FilterButton from "./components/FilterButton.js";
 
 function App(props) {
 
-  function addTask(name) {
-    const newTask = { id: "id", name: name, completed: false };
-    setTasks([...tasks, newTask]);
-  }
-
   const [tasks, setTasks] = useState(props.tasks);
   const taskList = tasks.map(task => (
     <Todo
@@ -20,6 +15,11 @@ function App(props) {
       />
     )
   );
+
+  function addTask(name) {
+    const newTask = { id: "id", name: name, completed: false };
+    setTasks([...tasks, newTask]);
+  }
 
   return (
     
