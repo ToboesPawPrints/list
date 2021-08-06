@@ -40,8 +40,8 @@ function App(props) {
     setTasks([...tasks, newTask]);
   }
 
-  const tasksNoun = taskList.length !==1 ? 'tasks' : 'task;'
-  const headingText = `${taskList.length} ${tasksNoun} tasks remaining`;
+  const tasksNoun = taskList.length !==1 ? 'tasks' : 'task';
+  const headingText = `${taskList.length} ${tasksNoun} remaining`;
 
   return (
     
