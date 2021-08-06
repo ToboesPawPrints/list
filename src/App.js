@@ -9,7 +9,13 @@ function App(props) {
   const [tasks, setTasks] = useState(props.tasks);
 
   function toggleTaskCompleted(id){
-    console.log(tasks[0])
+    const updatedTasks = tasks.map(task => {
+      if (id === task.id ) {
+        return {...task, completed: !task.completed}
+      }
+      return task;
+    });
+    setTasks(updatedTasks);
   }
 
   const taskList = tasks.map(task => (
