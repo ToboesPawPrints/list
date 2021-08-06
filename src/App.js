@@ -7,12 +7,18 @@ import { nanoid } from "nanoid";
 function App(props) {
 
   const [tasks, setTasks] = useState(props.tasks);
+
+  function toggleTaskCompleted(id){
+    console.log(tasks[0])
+  }
+
   const taskList = tasks.map(task => (
     <Todo
         id={task.id}
         name={task.name}
         completed={task.completed}
         key={task.id}
+        toggleTaskCompleted={toggleTaskCompleted}
       />
     )
   );
