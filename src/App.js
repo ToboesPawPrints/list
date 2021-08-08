@@ -43,7 +43,7 @@ function App(props) {
         deleteTask={deleteTask}
         editTask={editTask}
       />
-    )
+    ) 
   );
 
   function addTask(name) {
