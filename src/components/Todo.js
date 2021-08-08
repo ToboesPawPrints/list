@@ -8,8 +8,15 @@ export default function Todo(props) {
     setNewName(e.target.value)
   }
 
+  function handleSubmit(e) {
+    e.preventDefault();
+    props.editTask(props.id, newName);
+    setNewName("");
+    setEditing(false);
+  }
+
   const editingTemplate = (
-    <form className="stack-small">
+    <form className="stack-small" onSubmit={handleSubmit}>
       <div className="form-group">
         <label className="todo-label" htmlFor={props.id}>
           New name for {props.name}
