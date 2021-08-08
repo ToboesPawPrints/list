@@ -10,6 +10,8 @@ const FILTER_MAP = {
   Completed: task => task.completed
 }
 
+const FILTER_NAMES = Object.keys(FILTER_MAP);
+
 function App(props) {
 
   const [tasks, setTasks] = useState(props.tasks);
