@@ -7,5 +7,5 @@
 app.use(express.static(publicPath));
 
 app.listen(port, () => {
-    console.log(`The server is up on port $port!`);
+    console.log(`The server is up on port ${port}!`);
 });
