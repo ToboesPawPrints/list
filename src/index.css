@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 *:focus {
-  outline: 3px dashed #228bec;
+  outline: 3px solid #3fc8b1;
   outline-offset: 0;
 }
 html {
