@@ -34,7 +34,7 @@ button {
   -webkit-appearance: none;
 }
 button::-moz-focus-inner {
-  border-color: #3fc8b1;
+  outline: #3fc8b1;
 }
 button,
 input,
@@ -45,7 +45,7 @@ textarea {
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
-  box-shadow:#3fc8b1;
+  outline:#3fc8b1;
   
 }
 button,
@@ -186,11 +186,11 @@ body {
 }
 .input__lg {
   padding: 2rem;
-  border:#3fc8b1;
+  outline:#3fc8b1;
   
 }
 .input__lg:focus {
- inset:#3fc8b1;
+outline:#3fc8b1;
 }
 [class*="__lg"] {
   display: inline-block;
@@ -277,8 +277,8 @@ body {
   background: transparent;
 }
 .c-cb > input[type="checkbox"]:focus + label::before {
-  
-  border: 3px solid #3fc8b1;;
+  outline: 0 0 0 2px;
+  border: 3px solid #3fc8b1;
 }
 .c-cb > label::after {
   box-sizing: content-box;
