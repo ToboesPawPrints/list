@@ -94,8 +94,8 @@ body {
 }
 .btn__danger {
   color: #fff;
-  background-color: #ca3c3c;
-  border-color: #bd2130;
+  background-color: #0075ff;
+  border-color: #0075ff;
 }
 .btn__filter {
   border-color: #3fc8b1;
@@ -285,14 +285,13 @@ outline:#3fc8b1;
 .c-cb > input[type="checkbox"]:focus + label::before {
  background-color: #3fc8b1;
  border-color: 3px solid #3fc8b1;
- color: red;
- 
+
 
 }
 .c-cb > label::after {
   box-sizing: content-box;
   content: "";
-  
+
   position: absolute;
   top: 11px;
   left: 9px;
@@ -305,5 +304,4 @@ outline:#3fc8b1;
 }
 .c-cb > input[type="checkbox"]:checked + label::after {
   opacity: 1;
-
 }
