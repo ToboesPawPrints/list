@@ -85,7 +85,9 @@ body {
 }
 .btn.toggle-btn[aria-pressed="true"] {
   text-decoration: underline;
-  border-color: #4d4d4d;
+  background-color: #3fc8b1;
+  color: white;
+  border-color: white;
 }
 .btn__danger {
   color: #fff;
@@ -97,7 +99,7 @@ body {
 }
 .btn__primary {
   color: #fff;
-  background-color: #000;
+  background-color: #3fc8b1;;
 }
 .btn-group {
   display: flex;
