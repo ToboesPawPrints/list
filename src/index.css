@@ -54,7 +54,7 @@ input {
   
 }
 input[type="text"] {
-  box-shadow: #3fc8b1;
+  box-shadow: #3fc8b1 0 0 0 0;
 }
 body {
   width: 100%;
@@ -155,7 +155,7 @@ body {
   margin: 2rem 0 4rem 0;
   padding: 1rem;
   position: relative;
-  box-shadow: #3fc8b1 0 0 0 2px;;
+  box-shadow: #3fc8b1 0 0 0 2px;
 }
 @media screen and (min-width: 550px) {
   .todoapp {
@@ -186,6 +186,7 @@ body {
 }
 .input__lg {
   padding: 2rem;
+
   outline:#3fc8b1;
   
 }
@@ -196,10 +197,11 @@ outline:#3fc8b1;
   display: inline-block;
   width: 100%;
   font-size: 1.9rem;
-  border-color: #3fc8b1;
+  outline:#3fc8b1;
 }
 [class*="__lg"]:not(:last-child) {
   margin-bottom: 1rem;
+  outline: #3fc8b1
 }
 @media screen and (min-width: 620px) {
   [class*="__lg"] {
@@ -223,10 +225,11 @@ outline:#3fc8b1;
   width: 100%;
   min-height: 4.4rem;
   padding: 0.4rem 0.8rem;
-  border: 2px solid #3fc8b1;
+  border: 1px solid #3fc8b1;
 }
 .todo-text:focus {
   box-shadow: #3fc8b1 0 0 0 2px;
+  
 }
 /* CHECKBOX STYLES */
 .c-cb {
@@ -257,7 +260,8 @@ outline:#3fc8b1;
   position: absolute;
   z-index: 1;
   margin: 0;
-  border-color:#3fc8b1;
+
+
 
 }
 .c-cb > label {
@@ -277,8 +281,10 @@ outline:#3fc8b1;
   background: transparent;
 }
 .c-cb > input[type="checkbox"]:focus + label::before {
-  outline: 0 0 0 2px;
-  border: 3px solid #3fc8b1;
+ background-color: #3fc8b1;
+
+ border-color: 3px solid #3fc8b1;
+
 }
 .c-cb > label::after {
   box-sizing: content-box;
@@ -298,4 +304,5 @@ outline:#3fc8b1;
 }
 .c-cb > input[type="checkbox"]:checked + label::after {
   opacity: 1;
+
 }
