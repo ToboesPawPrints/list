@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 *:focus {
-  outline: 3px solid #3fc8b1;
+  
   outline-offset: 0;
 }
 html {
@@ -155,7 +155,7 @@ body {
   margin: 2rem 0 4rem 0;
   padding: 1rem;
   position: relative;
-  box-shadow: #3fc8b1 0 0 0 2px;
+  box-shadow: gray 0 0 0 2px;
 }
 @media screen and (min-width: 550px) {
   .todoapp {
@@ -252,7 +252,7 @@ outline:#3fc8b1;
   left: -2px;
   width: 44px;
   height: 44px;
-  border: #3fc8b1;
+
 }
 .c-cb > input[type="checkbox"] {
   -webkit-font-smoothing: antialiased;
@@ -264,6 +264,7 @@ outline:#3fc8b1;
 
 
 }
+
 .c-cb > label {
   font-size: inherit;
   font-family: inherit;
@@ -283,22 +284,21 @@ outline:#3fc8b1;
 }
 .c-cb > input[type="checkbox"]:focus + label::before {
  background-color: #3fc8b1;
-
  border-color: 3px solid #3fc8b1;
+ color: red;
+ 
 
 }
 .c-cb > label::after {
   box-sizing: content-box;
   content: "";
-  border: #3fc8b1;
+  
   position: absolute;
   top: 11px;
   left: 9px;
   width: 18px;
   height: 7px;
   transform: rotate(-45deg);
-  border: solid;
-  border-width: 0 0 5px 5px;
   border-top-color: transparent;
   opacity: 0;
   background: transparent;
