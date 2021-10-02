@@ -57,7 +57,7 @@ input[type="text"] {
   box-shadow: #3fc8b1 0 0 0 0;
 }
 body {
-  width: 100%;
+  width: 100%; 
   max-width: 68rem;
   margin: 0 auto;
   font: 1.6rem/1.25 Arial, sans-serif;

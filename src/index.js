@@ -11,7 +11,6 @@ const DATA = [
 ];
 
 
-
 ReactDOM.render(
   <React.StrictMode>
     <App tasks={DATA} />

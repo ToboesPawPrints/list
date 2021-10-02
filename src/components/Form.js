@@ -1,18 +1,22 @@
 import React, { useState } from "react";
 
 function Form(props) {
-  const [name, setName] = useState('');
+  const [name, setName] = useState("");
 
+  //preventDefault() prevents handleSubmit() from auto-refresh
+  //handleSubmit() is used to pass props to addTask
   function handleSubmit(e) {
     e.preventDefault();
     props.addTask(name);
-    setName('');
+    setName("");
   }
 
+  //Sets a new state for input of setName
+  //Identifies the event, variable to change,
+  //and the value(name) the changed variable will recevie.
   function handleChange(e) {
     setName(e.target.value);
   }
-
 
   return (
     <form onSubmit={handleSubmit}>
